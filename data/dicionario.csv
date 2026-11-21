@@ -1,0 +1,36 @@
+﻿variavel,rotulo,descricao,unidade,fonte
+codmun,codmun,Código IBGE municipal com sete dígitos.,,IBGE; elaboracao do projeto
+L,Trabalho no próprio município,Total ponderado de ocupados que trabalham no próprio município de residência.,pessoas,IBGE; elaboracao do projeto
+I,Trabalho em outra cidade da RGI,Total ponderado de residentes que trabalham em outro município da mesma RGI.,pessoas,IBGE; elaboracao do projeto
+E,Trabalho em outra RGI brasileira,Total ponderado de residentes que trabalham em outra RGI brasileira.,pessoas,IBGE; elaboracao do projeto
+exterior,Trabalho no exterior,Total ponderado de ocupados que declararam trabalho em outro país (P1120=4).,pessoas,IBGE; elaboracao do projeto
+multiplos,Trabalho em múltiplos municípios,Total ponderado de ocupados com trabalho em mais de um município ou país (P1120=5).,pessoas,IBGE; elaboracao do projeto
+ignorado,Destino de trabalho não identificado,"Total ponderado de ocupados com destino ausente, inconsistente ou não classificável.",pessoas,IBGE; elaboracao do projeto
+hhi_ie,IHH dos destinos dentro e fora da RGI,"Soma dos quadrados das participacoes de todos os destinos municipais de I+E, por origem; ausente quando I+E=0.",,IBGE; elaboracao do projeto
+hhi_i,IHH dos destinos dentro da RGI,"Soma dos quadrados das participacoes dos destinos municipais de I, por municipio de origem; ausente quando I=0.",,IBGE; elaboracao do projeto
+destinos_i,Destinos dentro da RGI,Numero de municipios de destino com fluxo I positivo; sem expansao.,,IBGE; elaboracao do projeto
+destinos_e,Destinos fora da RGI,Numero de municipios de destino com fluxo E positivo; sem expansao.,,IBGE; elaboracao do projeto
+T,Trabalho com destino conhecido,L+I+E: ocupados com municipio brasileiro de trabalho classificado; pessoas expandidas por P0111.,pessoas,IBGE; elaboracao do projeto
+cobertura,Cobertura dos destinos de trabalho,T/ocupados residentes de 14 anos ou mais; proporcao de destinos brasileiros classificados.,%,IBGE; elaboracao do projeto
+art_i_hhi,Articulação dentro da RGI,I/T*(1-hhi_i): intensidade intrarregional ponderada pela diversidade de municipios de destino; zero se I=0 e T>0.,,IBGE; elaboracao do projeto
+art_ie_hhi,Articulação dentro e fora da RGI,(I+E)/T*(1-hhi_ie): intensidade brasileira ponderada pela diversidade dos destinos; zero se I+E=0 e T>0.,,IBGE; elaboracao do projeto
+pib2022,PIB 2022,"PIB municipal corrente de 2022, em mil reais; base comum dos quantitativos.",R$ mil,IBGE; elaboracao do projeto
+pib_medio_real,PIB médio real 2021–2023,"Média aritmética de pib2021_real2022, pib2022_real2022 e pib2023_real2022, em mil reais a preços de 2022.",R$ mil de 2022,IBGE; elaboracao do projeto
+pop2010,pop2010,População residente de 2010 reconstituída pelo IBGE na base territorial de 2022.,,IBGE; elaboracao do projeto
+pop2022,População 2022,"População residente oficial do Censo 2022, segunda apuração.",habitantes,IBGE; elaboracao do projeto
+nome_municipio,nome_municipio,Nome do município no cadastro territorial de referência.,,IBGE; elaboracao do projeto
+rgi,rgi,Código IBGE da Região Geográfica Imediata com seis dígitos.,,IBGE; elaboracao do projeto
+nome_rgi,nome_rgi,Nome da RGI no cadastro territorial de referência.,,IBGE; elaboracao do projeto
+taxa_anual,taxa_anual,100*((pop2022/pop2010)^(1/12)-1).,,IBGE; elaboracao do projeto
+macro,macro,"Macrorregião: 0 Brasil, 1 Norte, 2 Nordeste, 3 Sudeste, 4 Sul, 5 Centro-Oeste.",,IBGE; elaboracao do projeto
+n_municipios_rgi,n_municipios_rgi,Numero de municipios da RGI; DF tem um municipio no cadastro.,,IBGE; elaboracao do projeto
+centralidade,Centralidade municipal,"0,5*(PIB medio municipal/lider_pib+pop2022/lider_pop). Baixo: menor porte relativo perante os lideres. Nao e medida da primazia regional.",,IBGE; elaboracao do projeto
+indice_renda,indice_renda,Soma das parcelas dos quatro grupos. Ausente quando há grupo elegível sem nenhuma renda válida ou nenhum trabalhador válido.,,IBGE; elaboracao do projeto
+tipo_lider,tipo_lider,"0: nenhum máximo; 1: PIB; 2: população; 3: ambos. Inclui empates e DF, que fica fora da matriz do Objetivo 2.",,IBGE; elaboracao do projeto
+c201,c201,O2A: 10 × classe centralidade + classe articulação I com IHH.,,IBGE; elaboracao do projeto
+c202,c202,O2B: 10 × classe centralidade + classe articulação I+E com IHH.,,IBGE; elaboracao do projeto
+uf_sigla,uf_sigla,Identificador ou apoio territorial,,IBGE; elaboracao do projeto
+lat,lat,"Ponto interior do poligono municipal, para posicionamento cartografico; nao representa domicilio.",,IBGE; elaboracao do projeto
+lon,lon,"Ponto interior do poligono municipal, para posicionamento cartografico; nao representa domicilio.",,IBGE; elaboracao do projeto
+id_tipologia,id_tipologia,"ID da Tipologia Referencial PNDR III, obtido da base agregada publica do painel PNDR_OBJ1; apenas filtro contextual.",,IBGE; elaboracao do projeto
+tipologia_pndr,tipologia_pndr,"Classe da Tipologia Referencial PNDR III, obtida da base publica do painel PNDR_OBJ1; distinta das categorias deste painel.",,IBGE; elaboracao do projeto

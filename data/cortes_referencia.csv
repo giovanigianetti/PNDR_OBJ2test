@@ -1,0 +1,3 @@
+﻿proposta,x,y,limite_x1,limite_x2,limite_y1,limite_y2,regra_x
+Dentro da RGI,centralidade,art_i_hhi,0.0422429896261279,0.2627800062576892,0.0073749180342382,0.0402411196186039,right-closed
+Dentro e fora da RGI,centralidade,art_ie_hhi,0.0422429896261279,0.2627800062576892,0.0347581927103029,0.1024409307067622,right-closed

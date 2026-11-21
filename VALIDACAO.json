@@ -1,0 +1,37 @@
+{
+  "status": "aprovado",
+  "objetivo": 2,
+  "cenarios": [
+    {
+      "proposta": 201,
+      "municipios": 5570,
+      "classificados": 5569,
+      "fora_matriz": 1,
+      "divergencias_stata": 0,
+      "simulacao_municipios_alterados": 1854,
+      "limites_inclusao": "conferidos"
+    },
+    {
+      "proposta": 202,
+      "municipios": 5570,
+      "classificados": 5569,
+      "fora_matriz": 1,
+      "divergencias_stata": 0,
+      "simulacao_municipios_alterados": 1854,
+      "limites_inclusao": "conferidos"
+    }
+  ],
+  "comparacao": {
+    "comuns": 5569,
+    "mesma_classe": 3529,
+    "mudam": 2040
+  },
+  "geografia": 5570,
+  "atualizacao": "2026-11-21",
+  "interface": {
+    "obj2": "Mapa, filtros, visao geral, ranking, tabela, comparacao e aplicacao/restauracao de cortes conferidos no navegador.",
+    "obj3": "Mapa, troca de propostas, duas matrizes comparativas, visao geral dos apoios, ranking de envelhecimento, metodologia e aplicacao/restauracao de cortes conferidos no navegador. Tela movel sem transbordamento horizontal e filtros recolhiveis.",
+    "exportacao": "Rotina presente; o teste de download pelo navegador de automacao nao foi concluido por perda da sessao.",
+    "publicacao": "Nao publicada; pacote pronto para envio ao GitHub Pages."
+  }
+}
